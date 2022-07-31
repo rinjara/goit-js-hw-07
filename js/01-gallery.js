@@ -11,7 +11,7 @@ const template = ({ description, original, preview }) => `<div class="gallery__i
       class="gallery__image"
       src=${preview}
       data-source=${original}
-      alt=${description}
+      alt='${description}'
     />
   </a>
 </div>`;

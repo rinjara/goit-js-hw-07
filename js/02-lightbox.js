@@ -5,7 +5,7 @@ console.log(galleryItems);
 const galleryRef = document.querySelector('.gallery');
 
 const template = ({ description, original, preview }) => `<a class="gallery__item" href=${original}>
-  <img class="gallery__image" src=${preview} alt=${description} />
+  <img class="gallery__image" src=${preview} alt='${description}' />
 </a>`;
 const galleryTemplate = galleryItems.map(galleryItem => template(galleryItem)).join('');
 
